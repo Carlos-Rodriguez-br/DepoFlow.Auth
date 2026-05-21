@@ -36,6 +36,7 @@
           }
         },
         "warningProperties": {
+          "allWarningsAsErrors": true,
           "warnAsError": [
             "NU1605"
           ]
@@ -51,7 +52,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "centralPackageVersions": {
-            "Microsoft.AspNetCore.OpenApi": "9.0.15"
+            "Microsoft.AspNetCore.OpenApi": "9.0.15",
+            "Microsoft.CodeAnalysis.NetAnalyzers": "9.0.0",
+            "Roslynator.Analyzers": "4.12.0",
+            "StyleCop.Analyzers": "1.2.0-beta.556"
           },
           "imports": [
             "net461",
