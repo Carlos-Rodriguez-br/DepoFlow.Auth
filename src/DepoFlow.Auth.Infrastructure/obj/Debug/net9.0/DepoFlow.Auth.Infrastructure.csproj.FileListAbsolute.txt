@@ -1,0 +1,11 @@
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\bin\Debug\net9.0\DepoFlow.Auth.Infrastructure.deps.json
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\bin\Debug\net9.0\DepoFlow.Auth.Infrastructure.dll
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\bin\Debug\net9.0\DepoFlow.Auth.Infrastructure.pdb
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\obj\Debug\net9.0\DepoFlow.Auth.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\obj\Debug\net9.0\DepoFlow.Auth.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\obj\Debug\net9.0\DepoFlow.Auth.Infrastructure.AssemblyInfo.cs
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\obj\Debug\net9.0\DepoFlow.Auth.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\obj\Debug\net9.0\DepoFlow.Auth.Infrastructure.dll
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\obj\Debug\net9.0\refint\DepoFlow.Auth.Infrastructure.dll
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\obj\Debug\net9.0\DepoFlow.Auth.Infrastructure.pdb
+C:\Users\carlo\Documents\Portafolio\Microservices\DepoFlow.Auth\src\DepoFlow.Auth.Infrastructure\obj\Debug\net9.0\ref\DepoFlow.Auth.Infrastructure.dll
