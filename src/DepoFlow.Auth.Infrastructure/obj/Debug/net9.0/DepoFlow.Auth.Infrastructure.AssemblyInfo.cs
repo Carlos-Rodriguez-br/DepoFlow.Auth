@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DepoFlow.Auth.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05cff640a7e4efc366e85fc60eb505810a15ec1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd8bd95f6e5fc1b4be88300fc198a4c914a0fc22")]
 [assembly: System.Reflection.AssemblyProductAttribute("DepoFlow.Auth.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DepoFlow.Auth.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

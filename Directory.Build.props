@@ -9,7 +9,12 @@
     <AnalysisLevel>latest</AnalysisLevel>
     <AnalysisMode>AllEnabledByDefault</AnalysisMode>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <!-- <Configurations>Debug;Release;Develop;Production;Testing;Staging</Configurations> -->
     <SatelliteResourceLanguages>es</SatelliteResourceLanguages>
+    <NoWarn>SA1633;SA1636;SA1600;SA0001</NoWarn>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" PrivateAssets="all" />
+    <PackageReference Include="StyleCop.Analyzers" PrivateAssets="all" />
+  </ItemGroup>
 </Project>

@@ -12,7 +12,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-
 app.MapGet("/weatherforecast", () =>
 {
     return "Hola mundo";
