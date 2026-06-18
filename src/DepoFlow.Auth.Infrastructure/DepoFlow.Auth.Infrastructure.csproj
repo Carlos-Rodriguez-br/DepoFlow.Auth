@@ -1,3 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" />
+        <PackageReference Include="Newtonsoft.Json" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\DepoFlow.Auth.Application\DepoFlow.Auth.Application.csproj" />
+      <ProjectReference Include="..\DepoFlow.Auth.Domain\DepoFlow.Auth.Domain.csproj" />
+    </ItemGroup>
 </Project>

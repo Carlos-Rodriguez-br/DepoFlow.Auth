@@ -2,5 +2,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DepoFlow.Auth.Application\DepoFlow.Auth.Application.csproj" />
+    <ProjectReference Include="..\DepoFlow.Auth.Domain\DepoFlow.Auth.Domain.csproj" />
+    <ProjectReference Include="..\DepoFlow.Auth.Infrastructure\DepoFlow.Auth.Infrastructure.csproj" />
+  </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-
+  <ItemGroup>
+    <ProjectReference Include="..\DepoFlow.Auth.Domain\DepoFlow.Auth.Domain.csproj" />
+  </ItemGroup>
 </Project>

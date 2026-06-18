@@ -8,10 +8,11 @@ public sealed class Modules : Entity<ModuleId>
     private Modules()
     {
     }
-    private Modules(ModuleId id,ModuleId? parendModule, string? name, string? route, string? icon, int? order, bool? isVisibleInMenu, bool? isActive, DateTime? createdAt, DateTime? updatedAt) : base(id)
+    private Modules(ModuleId id,ModuleId? parendModule, string? name, string description, string? route, string? icon, int? order, bool? isVisibleInMenu, bool? isActive, DateTime? createdAt, DateTime? updatedAt) : base(id)
     {
         ParendModule = parendModule;
         Name = name;
+        Description = description;
         Route = route;
         Icon = icon;
         Order = order;
@@ -23,6 +24,7 @@ public sealed class Modules : Entity<ModuleId>
 
     public ModuleId? ParendModule { get; private set; }
     public string? Name { get; private set; }
+    public string? Description { get; private set; }
     public string? Route { get; private set; }
     public string? Icon { get; private set; }
     public int? Order { get; private set; }
@@ -31,12 +33,13 @@ public sealed class Modules : Entity<ModuleId>
     public DateTime? CreatedAt { get; private set; }
     public DateTime? UpdatedAt { get; private set; }
 
-    public static Modules Create(ModuleId? parendModule, string name, string route, string? icon, int order, bool isVisibleInMenu, DateTime? createdAt)
+    public static Modules Create(ModuleId? parendModule, string name, string description, string route, string? icon, int order, bool isVisibleInMenu, DateTime? createdAt)
     {
         return new Modules(
             ModuleId.New(),
             parendModule, 
-            name, 
+            name,
+            description,
             route, 
             icon, 
             order, 

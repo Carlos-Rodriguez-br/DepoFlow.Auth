@@ -10,7 +10,7 @@
     <AnalysisMode>AllEnabledByDefault</AnalysisMode>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <SatelliteResourceLanguages>es</SatelliteResourceLanguages>
-    <NoWarn>SA1633;SA1636;SA1600;SA0001;CA2225</NoWarn>
+    <NoWarn>SA1633;SA1636;SA1600;SA0001;CA2225;CA2007</NoWarn>
   </PropertyGroup>
 
 </Project>
