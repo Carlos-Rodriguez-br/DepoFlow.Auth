@@ -29,8 +29,6 @@ public sealed class ApplicationDbContext : DbContext, IUnitOfWork
         {
             var result = await base.SaveChangesAsync(cancellationToken);
 
-            // await PublishDomainEventsAsync();  --Aqui es si se publican con mediatR los eventos
-
             return result;
         }
         catch (DbUpdateConcurrencyException ex)
