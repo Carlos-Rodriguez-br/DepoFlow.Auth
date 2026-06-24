@@ -1,7 +1,9 @@
 using DepoFlow.Auth.Application.Abstractions;
+using DepoFlow.Auth.Application.Abstractions.Data;
 using DepoFlow.Auth.Domain.Abstractions;
 using DepoFlow.Auth.Infrastructure.Authentication;
 using DepoFlow.Auth.Infrastructure.Clock;
+using DepoFlow.Auth.Infrastructure.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +28,7 @@ public static class ServiceCollectionExtensions
                 sql.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName);
             })
         );
+        services.AddSingleton<ISqlConnectionFactory>(_ => new SqlConnectionFactory(connectionString));
         #endregion
         #region Providers
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
