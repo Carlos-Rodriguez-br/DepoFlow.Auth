@@ -1,13 +1,15 @@
 using DepoFlow.Auth.Application.Abstractions;
 using DepoFlow.Auth.Domain.Abstractions;
+using DepoFlow.Auth.Infrastructure.Authentication;
 using DepoFlow.Auth.Infrastructure.Clock;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DepoFlow.Auth.Infrastructure;
+namespace DepoFlow.Auth.Infrastructure.DependencyInjection;
 
-public static class DependencyInjection
+public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddInfrastructure(
         this IServiceCollection services,
@@ -28,6 +30,13 @@ public static class DependencyInjection
         #region Providers
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<ApplicationDbContext>());
+        #endregion
+
+        #region Authentication
+        services.AddAuthorization();
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
+        services.ConfigureOptions<JwtOptionsSetup>();
+        services.ConfigureOptions<JwtBearerOptionsSetup>();
         #endregion
 
         return services;

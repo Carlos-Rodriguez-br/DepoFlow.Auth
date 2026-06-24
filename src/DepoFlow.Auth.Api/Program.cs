@@ -1,6 +1,10 @@
+using DepoFlow.Auth.Infrastructure.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
+
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
@@ -10,12 +14,9 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+app.UseAuthentication();
+app.UseAuthorization();
 app.UseHttpsRedirection();
-
-app.MapGet("/weatherforecast", () =>
-{
-    return "Hola mundo";
-})
-.WithName("GetWeatherForecast");
+app.MapControllers();
 
 app.Run();
